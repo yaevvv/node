@@ -4,9 +4,10 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 
 const app = express()
+
 app.get('/', (request, response) => {
     response.render('home', {
-        name: 'John'
+        name: 'Gin'
     })
 })
 app.engine('.hbs', exphbs({
